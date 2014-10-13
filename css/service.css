@@ -1,0 +1,104 @@
+
+.marginRight0{margin-right:0!important}
+.user-avatar{display:block;border:1px solid #e6e6e6;width:120px;height:120px}
+.user-detail{border:1px solid #e8e8e8;position:absolute;left:-31px;top:-11px;padding:0;background:#fff;width:300px;z-index:9;display:none;*height:152px;box-shadow:1px 1px 2px #e8e8e8}
+.user-detail .float-left{padding:10px 10px 0 30px;*width:122px}
+.user-detail .float-right{width:136px;padding-top:40px}
+#main a.user-avatar-edit, .user-avatar-container{display:block;padding:0;width:122px;margin:0 auto;height:122px;position:relative;_font-size:0;*z-index:1}
+#main a.user-avatar-edit .cover{visibility:hidden;background:rgba(0, 0, 0, 0.2);position:absolute;top:0;left:0;width:100%;height:100%;color:#fff;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#33000000, endColorstr=#33000000)}
+#main a.user-avatar-edit .cover:not([dummy]){filter:progid:DXImageTransform.Microsoft.gradient(enabled='false')}
+#main a.user-avatar-edit .cover span{padding:100px 0 0 100px;display:inline-block;line-height:1}
+#main a.user-avatar-edit:hover{_zoom:1}
+#main a.user-avatar-edit:hover .cover{visibility:visible}
+.main-sidebar a.btn-xs{line-height:25px;padding:0 12px;margin-bottom:10px}
+.main-sidebar-menu{width:184px}
+.main-sidebar-menu li{_height:40px;vertical-align:middle}
+.main-sidebar-menu li .title{line-height:55px;padding:0 14px;height:55px}
+.main-sidebar-menu li a{line-height:40px;padding:0 14px;width:auto;*zoom:1}
+.main-sidebar-menu li a.chosen{background-color:#f60;color:#fefefe}
+.main-sidebar-menu li .username{line-height:30px;width:122px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin:0 auto}
+.main-sidebar-menu li .user-level{width:122px;background:#f1c40f;margin:1px auto 10px;height:18px;position:relative}
+.main-sidebar-menu li .user-level .title{position:absolute;height:18px;top:0;left:6px;padding:0;color:#fff;line-height:18px}
+.main-sidebar-menu li .user-level .content{background:#55901a;color:#fff;height:100%}
+.main-sidebar-right{width:184px}
+.main-sidebar-right .main-sidebar{margin-bottom:20px;padding-bottom:10px}
+.main-sidebar-right .main-sidebar .title{border-bottom:1px solid #ededed}
+.main-sidebar-right .main-sidebar .title .more{position:absolute;top:0;right:10px;line-height:55px;padding-right:0}
+.main-sidebar-right .main-sidebar .line a{display:block;width:156px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.main-content{position:relative;width:770px}
+.main-content #headerLink{position:absolute;top:55px;right:25px}
+.main-content-center{width:570px;margin-left:20px}
+.main-content-center .main-content-body{padding-left:17px;padding-right:17px}
+.main-content-center .main-content-header{padding-left:0;padding-right:0}
+.main-content-center .main-content-header .more{position:absolute;top:14px;*top:8px;right:0;font-size:14px}
+.main-content-header{position:relative}
+.main-content-header .hotline-qq{position:absolute;top:20px;right:25px;line-height:22px;font-size:14px}
+.main-content-body{padding:0 25px}
+.main-content-body .btn-block{width:230px}
+.main-content-body .progress{width:480px}
+.main-content-body .progress-step{margin:0 auto}
+.main-content-body .progress-step .progress-bar{width:160px}
+.main-content-body .block .font-icon{font-size:24px}
+.main-content-body .well{padding:30px 50px}
+.main-content-body .well-inline{padding:25px 30px}
+.main-content-body .well .block-sub{margin-bottom:0}
+.main-content-body .text-center .btn-block, .main-content-body .text-center img{margin-left:auto;margin-right:auto;display:block}
+.main-content-body .block{_width:720px}
+.main-content-body .block .step-next{width:154px}
+.main-content-body .block .radio{line-height:30px;height:30px;display:block}
+.main-content-body .select-app li{width:168px;margin-right:16px;margin-bottom:50px}
+.main-content-body .select-app .btn-block{width:164px;border:2px solid #e6e6e6;height:104px;border-radius:4px;background-image:url(../img/logo.jpg)}
+.main-content-body .select-app .btn-block span{visibility:hidden;display:block;height:25px;margin-top:79px;background:#f60;color:#fff;border-radius:0 0 2px 2px;text-align:center}
+.main-content-body .select-app .btn-block:hover{border-color:#f60}
+.main-content-body .select-app .btn-block:hover span{visibility:visible}
+.main-content-body .select-app .sxdandroid{background-position:-331px -211px}
+.main-content-body .select-app .sxdios{background-position:-166px -211px}
+.main-content-body .select-app .jsios{background-position:-166px -316px}
+.main-content-body .select-app .sssg{background-position:-1px -1px}
+.main-content-body .select-app .tdyx{background-position:-331px -1px}
+.main-content-body .select-app .ktpd{background-position:-1px -106px}
+.main-content-body .select-app .sxd{background-position:-166px -1px}
+.main-content-body .select-app .xxd{background-position:-331px -106px}
+.main-content-body .select-app .sg2{background-position:-1px -316px}
+.main-content-body .select-app .js{background-position:-1px -211px}
+.main-content-body .select-app .sy{background-position:-166px -106px}
+.zbzh .select-app .ktpd{background-position:-331px -316px}
+#popupEditAvatar .modal-body{width:450px;margin:0 auto;height:251px;overflow:hidden}
+#popupEditAvatar .modal-body iframe{width:448px;height:100%;background:url(/imgs/v3/loading_black.gif?v=) no-repeat center center}
+.img-border img{border:1px solid #e0e0e0}
+.qq-link{display:inline-block;overflow:hidden;width:92px;height:22px;background-repeat:no-repeat;background:transparent url(../img/qq_kefu.png);line-height:22px;font:0/0 a;vertical-align:middle;cursor:pointer}
+.service-guide .item{position:relative;display:inline;float:left;width:116px;height:96px;margin-right:18px;border:2px solid #ecf0f1;border-radius:6px}
+.service-guide .kefu-qq-link{background:0;text-indent:0}
+.service-guide .item .icon{height:60px;margin-top:5px;background:url(../img/icon_service_guide.png) no-repeat}
+.service-guide .item .icon.hot_line{background-position:11px 0}
+.service-guide .item .icon.qq_online{background-position:11px -60px}
+.service-guide .item .icon.wechat{background-position:11px -120px}
+.service-guide .item .icon.petition{background-position:11px -180px}
+.service-guide .item .foot{position:absolute;left:0;bottom:0;width:100%;height:26px;line-height:26px;background-color:#ecf0f1;text-align:center}
+.main-content-body .self-help .well{*width:492px;margin:0;padding:10px 20px 0;*padding-bottom:10px}
+.main-content-body .self-help .well li{width:110px;margin:0 80px 10px 0}
+.main-content-body .self-help .well li span{line-height:24px}
+.main-content-body .self-help .well li .font-icon{padding-right:10px;font-size:24px;color:#f60!important}
+#QRCode{width:430px;height:430px;background:url('imgs/wx/QR_code.jpg')}
+#popupPetition{width:680px;overflow:hidden}
+#popupPetition .modal-body{padding:0;color:#999}
+#popupPetition .panel-title{padding:15px 24px 0}
+#popupPetition .panel-left-content{width:270px;padding:45px 0 0;color:#f39c12}
+#popupPetition .panel-left-content .petition-step{margin:0 auto;width:190px;height:50px;line-height:50px;border:2px solid #f2f1ed;border-radius:5px;background-color:#faf9f7}
+#popupPetition .panel-left-content .arrow{margin:6px auto;width:0;border:12px #fff solid;border-bottom-width:0;border-top-color:#f5b668;font-size:0}
+#popupPetition .panel-right{border-left:1px solid #ecf0f1;width:409px}
+#popupPetition .panel-right-content{padding:15px 0 0}
+#popupPetition .panel-right-content li{padding:0 0 14px 100px;position:relative;*zoom:1}
+#popupPetition .panel-right-content li label{display:block;position:absolute;left:0;width:100px;height:30px;line-height:30px;text-align:right}
+#popupPetition .panel-right-content li .input-text, #popupPetition .panel-right-content li .input-textarea{width:180px;padding:3px 8px;display:block}
+#popupPetition .panel-right-content li .input-textarea{height:84px;overflow-y:auto;position:relative;resize:none}
+#popupPetition .panel-right-content li .placeholder{white-space:normal;word-break:break-all;width:186px}
+#popupPetition .panel-right-content li.form-submit-area{position:relative;margin:35px 0 0;padding:25px 0;background-color:#f0f0f0}
+#popupPetition .panel-right-content li.form-submit-area .submit-info{position:absolute;left:100px;top:-42px;line-height:20px;*width:300px}
+#popupPetition .panel-right-content .btn{min-width:154px;*width:154px;*display:inline;margin:0 6px;padding:10px 0}
+
+/*自助服务*/
+.self-help .box{display:inline;float:left;width:340px;height:180px;margin:0 30px 12px 0;border:2px solid #e0e0e0;border-radius:4px}
+.self-help .box .title{height:50px;line-height:50px;padding-left:30px;border-bottom:2px solid #e0e0e0}
+.self-help .box .content{padding:8px 0 0 30px}
+.self-help .box .content li{display:inline;float:left;width:150px;margin-bottom:3px}

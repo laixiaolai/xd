@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>网银充值</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="css/main.css" rel="stylesheet">
+<link href="css/pay.css" rel="stylesheet">
+</head>
+<body>
+	<noscript>
+        &lt;div id="noscript"&gt;
+            您的浏览器禁用了JavaScript，为了正常使用本网站的功能请开启JavaScript或者更换浏览器重试。
+        &lt;/div&gt;
+    </noscript>
+    <div id="header" class="relative">
+        <div class="header-login">
+            <div class="layout text-right size-small clearfix">
+                <div class="float-right no-login ">
+                    您好，欢迎来到心动游戏：
+                    <a id="btnLogin" href="#" data-toggle="modal">
+                        马上登录
+                    </a>
+                    或
+                    <a id="btnRegister" data-toggle="modal" href="#">
+                        注册
+                    </a>
+                </div>
+                <div class="float-right yes-login hide">
+                    <a href="#" class="hide admin-link">
+                        后台
+                    </a>
+                    <div class="xdmini-dropdown my-profile relative hide">
+                        <a href="#" class="xdmini-dropdown-header my-profile-header" data-toggle="dropdown">
+                            <span class="nickname">
+                            </span>
+                            <span class="arrow">
+                            </span>
+                        </a>
+                        <div class="xdmini-dropdown-body my-profile-body text-left">
+                            <a href="#">
+                                个人中心
+                            </a>
+                            <a href="#">
+                                我的礼券
+                            </a>
+                            <a href="#">
+                                充值历史
+                            </a>
+                            <a href="#">
+                                账号安全
+                            </a>
+                            <a href="#" class="logout">
+                                退出
+                            </a>
+                            <div class="arrow" style="left: auto; right: 18px;">
+                                <div class="inside">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="xdmini-dropdown my-games float-left relative hide">
+                    <a href="#" class="xdmini-dropdown-header my-games-header" data-toggle="dropdown">
+                        我的游戏
+                        <span class="arrow">
+                        </span>
+                    </a>
+                    <div class="xdmini-dropdown-body my-games-body text-left">
+                        <div class="arrow">
+                            <div class="inside">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-nav ">
+            <div class="layout clearfix">
+                <a href="#" class="float-left header-logo-xd">
+                </a>
+                <div class="nav-list float-left">
+                    <a href="index.html" class="size-big btn btn-link hover ">
+                        首页
+                    </a>
+                    <a href="paygame.html" class="size-big btn btn-link  ">
+                        充值
+                    </a>
+                    <a href="service.html" class="size-big btn btn-link  ">
+                        客服
+                    </a>
+                    <a href="pay_.html" class="size-big btn btn-link  ">
+                        活动
+                    </a>
+                    <a href="ucenter.html" class="size-big btn btn-link  ">
+                        用户中心
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="main" class="">
+        <div class="layout clearfix">
+            <div class="main-content float-left">
+                <div class="main-content-body clearfix need-login">
+                    <div class="float-left relative">
+                        <ul class="main-sidebar-menu payment-list">
+                            <li class="text-left relative">
+                                <div class="title">充值</div>
+                            </li>
+                            <li><a id="alibank" href="#" class="payment btn-block first chosen">网银充值<div class="arrow"><div class="inside"></div></div></a>
+                            </li>
+                            <li><a id="alipay" href="#" class="payment btn-block ">支付宝<div class="arrow"><div class="inside"></div></div></a>
+                            </li>
+                            <li><a id="yikatong" href="#" class="payment btn-block ">活动礼券<div class="arrow"><div class="inside"></div></div></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="float-left">
+                        <form class="form text-center" method="POST" action="http://www.xd.com/orders/create/?app=sxdios#" onsubmit="return false" id="createForm">
+                            <div class="input-container text-left">
+                                <div class="form-group clearfix">
+                                    <div class="float-left">
+                                        <p>充值的游戏：<span id="appText" class="text-lead">《神仙道 iPhone / iPad 版》</span>
+                                        </p>
+                                        <input id="app" name="app" type="hidden" value="sxdios">
+                                    </div> <a href="#" target="_blank" class="float-right text-strong about-liquan hide sub-payment" style="display: none;">查看我的礼券&gt;</a>
+                                </div>
+                                <div class="form-group" id="usernameArea">
+                                    <p class="form-label">充入账号：</p>
+                                    <div class="form-control-inline">
+                                        <input type="text" autocomplete="off" class="input-text form-control input-username" id="username" username="username">
+                                        <div class="help-block text-danger hide float-left size-small">没有匹配到用户名，请确认输入帐号是否正确</div>
+                                    </div>
+                                    <div class="username-display clearfix ">
+                                        <div class="username float-left">laixiaolai</div>
+                                        <div class="icon-logo icon-xd float-left" data-suffix=""></div> <a class="close float-right" href="#">×</a>
+                                    </div>
+                                    <ul id="userList" class="user-select hide"></ul>
+                                </div>
+                                <div class="form-group form-group-block-sub" id="server">
+                                    <p class="form-label">充值的服务器：</p>
+                                    <div class="form-control-inline">
+                                        <select name="appId" class="selectpicker form-control" data-size="6" style="display: none;">
+                                            <option value="">请选择服务器</option>
+                                        </select>
+                                        <div class="btn-group select form-control">
+                                            <button type="button" class="btn dropdown-toggle btn-default" data-toggle="dropdown">
+                                                <div class="filter-option pull-left">请选择服务器</div> 
+                                                <div class="caret"></div>
+                                            </button>
+                                            <div class="dropdown-menu open">
+                                                <ul class="dropdown-menu inner" role="menu">
+                                                    <li rel="0" class="selected"><a tabindex="0" class="" style=""><span class="text">请选择服务器</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="help-block text-danger hide float-left size-small" style="display: block;">该用户没有玩过此游戏</div>
+                                    </div>
+                                </div>
+                                <div class="form-group amount-type form-group-block" id="amountNormal" style="display: block;">
+                                    <p class="form-label">需要充值的金额：</p>
+                                    <div class="radio-list clearfix">
+                                        <div class="radio float-left ">
+                                            <input id="amount10" type="radio" name="amount" value="10">10元</div>
+                                        <div class="radio float-left ">
+                                            <input id="amount20" type="radio" name="amount" value="20">20元</div>
+                                        <div class="radio float-left ">
+                                            <input id="amount50" type="radio" name="amount" value="50">50元</div>
+                                        <div class="radio float-left radio-checked">
+                                            <input id="amount100" type="radio" name="amount" value="100" checked="checked">100元</div>
+                                        <div class="radio float-left ">
+                                            <input id="amount300" type="radio" name="amount" value="300">300元</div>
+                                        <div class="radio float-left ">
+                                            <input id="amount500" type="radio" name="amount" value="500">500元</div>
+                                        <div class="radio hide" style="_display: none;">
+                                            <input id="amountCustom" type="radio" name="amount" value="-1">自定义</div>
+                                    </div>
+                                    <div class="form-control-inline"> <span class="float-left">自定义金额　</span>
+     
+                                        <div class="float-left">
+                                            <input type="text" tabindex="-1" id="amountText" value="" placeholder="自定义金额" class="input-text">
+                                        </div> <span class="float-left"> 元人民币</span>
+     <span class="float-left size-small">(<i class="text-strong">*</i>单笔充值金额最少10元)</span> 
+                                    </div>
+                                    <p><span class="size-small">获得游戏币</span>  <span class="text-strong app-amount">1000</span><span class="text-strong unit">元宝</span>
+                                    </p>
+                                </div>
+                                <div class="form-group amount-type form-group-block hide" id="amountFixedOptions" style="display: none;">
+                                    <p class="form-label">需要充值的金额：</p>
+                                    <div class="radio-list clearfix"></div>
+                                    <p>获得游戏币 <span class="text-strong app-amount">1000</span><span class="text-strong unit">元宝</span>
+                                    </p>
+                                </div>
+                                <div class="form-group amount-type form-group-block hide" id="amountLiquan" style="display: none;">
+                                    <p class="form-label">礼券号：</p>
+                                    <div class="form-control-inline">
+                                        <input type="text" id="liquanCodeInput" value="" autocomplete="off" class="input-text form-control"><span id="parVal" class="form-control"></span>
+     
+                                    </div>
+                                    <p class="help-block">获得游戏币 <span class="text-strong app-amount">1000</span><span class="text-strong unit">元宝</span>
+                                    </p>
+                                </div>
+                                <div class="form-group sub-payment form-group-block" id="chooseBank" style="display: block;">
+                                    <p class="form-label">选择银行：</p>
+                                    <div class="radio-list clearfix size-small">
+                                        <div class="radio float-left radio-checked" id="icbc">
+                                            <input type="radio" name="bank" value="ICBC-NET" checked="checked">工商银行</div>
+                                        <div class="radio float-left " id="cmbchina">
+                                            <input type="radio" name="bank" value="CMBCHINA-NET">招商银行</div>
+                                        <div class="radio float-left " id="ccb">
+                                            <input type="radio" name="bank" value="CCB-NET">建设银行</div>
+                                        <div class="radio float-left " id="boco">
+                                            <input type="radio" name="bank" value="BOCO-NET">交通银行</div>
+                                        <div class="radio float-left " id="zgb">
+                                            <input type="radio" name="bank" value="ZGB-NET">中国银行</div>
+                                        <div class="radio float-left " id="bccb">
+                                            <input type="radio" name="bank" value="BCCB-NET">北京银行</div>
+                                        <div class="radio float-left " id="abc">
+                                            <input type="radio" name="bank" value="ABC-NET">农业银行</div>
+                                        <div class="radio float-left " id="cmbc">
+                                            <input type="radio" name="bank" value="CMBC-NET">民生银行</div>
+                                        <div class="radio float-left " id="pab">
+                                            <input type="radio" name="bank" value="PAB-NET">平安银行</div>
+                                        <div class="radio float-left " id="ecitic">
+                                            <input type="radio" name="bank" value="ECITIC-NET">中信银行</div>
+                                        <div class="radio float-left " id="sdb">
+                                            <input type="radio" name="bank" value="SDB-NET">深圳发展</div>
+                                        <div class="radio float-left " id="spdb">
+                                            <input type="radio" name="bank" value="SPDB-NET">浦发银行</div>
+                                        <div class="radio float-left " id="cib">
+                                            <input type="radio" name="bank" value="CIB-NET">兴业银行</div>
+                                        <div class="radio float-left " id="gfb">
+                                            <input type="radio" name="bank" value="GFB-NET">广发银行</div>
+                                    </div>
+                                </div>
+                                <div class="form-group sub-payment form-group-block" id="chooseBoc" style="display: none;">
+                                    <p class="form-label">选择支付通道：</p>
+                                    <div class="radio-list clearfix size-small">
+                                        <div class="radio float-left radio-checked" id="visa">
+                                            <input type="radio" name="boc" value="VISA-NET" checked="checked">Visa</div>
+                                        <div class="radio float-left " id="master">
+                                            <input type="radio" name="boc" value="MASTER-NET">Master</div>
+                                    </div>
+                                </div>
+                                <div class="form-group other-info hide" id="sssgLiquan" style="display: none;">
+                                    <p>提示：请在邮件中收取银子</p>
+                                </div>
+                                <div class="form-group">
+                                    <div class="form-control-inline">
+                                        <div class="float-left">短信通知：</div>
+                                        <div class="checkbox float-left">
+                                            <div class="icon"></div>免费短信通知
+                                            <input type="checkbox" id="sendMsg">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="sendMobile" class="form-group hide">
+                                    <p class="form-label">收款人手机号码：</p>
+                                    <div class="form-control-inline">
+                                        <input type="text" autocomplete="off" class="input-text form-control input-mobile" id="send_mobile_input">
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="agreement" class="form-group block-sub">
+                                <div class="checkbox checkbox-checked">
+                                    <div class="icon"></div>我已阅读并同意<a href="#" target="_blank" class="text-strong">《心动游戏币充值服务协议》</a>
+     
+                                    <input type="checkbox" checked="checked">
+                                </div>
+                            </div> <a class="btn btn-block btn-primary btn-block-narrow" id="submitOrder" href="#">提交充值</a>
+     
+                        </form>
+                        <form method="POST" action="http://www.xd.com/orders/create_submit/" target="_blank" id="realForm"></form>
+                    </div>
+                    <div class="modal modal-dialog" id="ktpdTestNotice">
+                        <div class="modal-header clearfix">
+                            <div class="title">特别注意</div> <a href="#" class="close">×</a>
+     
+                        </div>
+                    </div>
+                    <div class="modal modal-dialog" id="paySuccess">
+                        <div class="modal-header clearfix">
+                            <div class="title">完成付款</div> <a href="#" class="close">×</a>
+     
+                        </div>
+                        <div class="modal-body">
+                            <p>请在新开页面中完成付款后提交。</p>
+                            <p class="hide tip-yikatong other-info" style="display: none;">充值有延迟到账的风险，如有疑问请联系宝付客服（021-68811008）</p> <a href="#" class="text-strong">充值遇到问题?</a>
+     
+                        </div>
+                        <div class="modal-footer"> <a href="#" class="btn btn-default btn-cancel">返回修改</a>
+     <a href="#" id="ktpd_order" class="btn btn-primary">已完成付款</a>
+     
+                        </div>
+                    </div>
+                    <div id="payConfirm" class="modal modal-dialog">
+                        <div class="modal-header clearfix">
+                            <div class="title text-lead">充值信息确认</div> <a href="#" class="close">×</a>
+     
+                        </div>
+                        <div class="modal-body">
+                            <p>您将要进行充值的账户：<span class="text-lead" id="confirmUsername"></span>
+                            </p>
+                            <p>充值的游戏：<span class="text-lead" id="confirmApp"></span>
+                            </p>
+                            <p>充值的服务器：<span class="text-lead" id="confirmAppId"></span>
+                            </p>
+                            <p class="hide">充值的角色：<span class="text-lead" id="confirmCharacter"></span>
+                            </p>
+                            <p>充值金额：<span class="text-lead" id="confirmAmount"></span>
+                            </p>
+                            <div class="well well-warning text-warning text-center">
+                                <p>提示：本笔充值无法进行退款操作，</p>
+                                <p>请确认以上操作内容无误后提交充值</p>
+                            </div>
+                        </div>
+                        <div class="modal-footer"> <a href="#" class="btn btn-confirm btn-primary">确定</a>
+     
+                        </div>
+                    </div>
+                    <div class="modal modal-dialog" id="popupForSxdiosOrder">
+                        <div class="modal-header clearfix">
+                            <div class="title">神仙道 iPhone / iPad 版 充值</div> <a href="#" class="close">×</a>
+     
+                        </div>
+                        <div class="modal-body">现使用AppStore在游戏中充值达60元即送额外元宝</div>
+                        <div class="modal-footer"> <a href="#" target="_blank" class="btn btn-primary">查看优惠</a>
+     <a href="#" class="btn btn-default btn-cancel">继续充值</a>
+     
+                        </div>
+                    </div>
+                     
+                </div>
+                <!-- END OF create form -->
+            </div>
+            <div class="main-sidebar float-right">
+                <ul class="main-sidebar-menu">
+                    <li class="text-center">
+                        <div class="title clearfix"> <span class="float-left">常见问题</span>
+     <a href="#" class="float-right">更多&gt;</a>
+     
+                        </div>
+                    </li>
+                    <li><a href="#">充值遇到问题？</a>
+                    </li>
+                    <li><a href="#">充值代付流程</a>
+                    </li>
+                    <li><a href="#">充值异常如何解决？</a>
+                    </li>
+                    <li><a href="#">充值状态说明</a>
+                    </li>
+                </ul>
+                <ul class="main-sidebar-menu">
+                    <li class="text-left">
+                        <div class="title">客服</div>
+                    </li>
+                    <li class="service-contact">
+                        <div class="service-phone">4001 526 526</div>
+                        <div class="size-small service-email">邮箱: <a href="#" target="_blank">tousu@xindong.com</a>
+                        </div> <a class="service-appeal text-center size-small" target="_blank" href="#">账号申诉</a>
+     
+                        <a class="kefu-qq-link" target="_blank" href="#"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="footer" class="full">
+        <div class="footer-links">
+            <div class="layout clearfix">
+                <div class="float-left footer-logo-xd">
+                    <a href="#" class="hide-text">
+                        心动游戏
+                    </a>
+                </div>
+                <div class="float-left footer-list footer-game-list">
+                    <div class="title">
+                        游戏
+                    </div>
+                    <ul class="clearfix content">
+                        <li>
+                            <a href="#" target="_blank">
+                                神仙道
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                盛世三国
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                将神
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                深渊
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                仙侠道
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                盛世三国2
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                开天辟地2
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                天地英雄
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                忍者无双
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="float-left footer-list footer-about-list">
+                    <div class="title">
+                        关于
+                    </div>
+                    <ul class="content">
+                        <li>
+                            <a href="#" target="_blank">
+                                公司介绍
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                商务合作
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                加入心动
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                心动公益
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="float-left footer-list footer-service-list">
+                    <div class="title">
+                        服务
+                    </div>
+                    <ul class="content">
+                        <li>
+                            <a href="#" target="_blank">
+                                充值
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                客服
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                免责声明
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                未成年人家长监护
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="float-left footer-list footer-other-list">
+                    <div class="title">
+                        其它
+                    </div>
+                    <ul class="content">
+                        <li>
+                            <a href="#" target="_blank">
+                                官方微博
+                            </a>
+                            <span class="new size-small">
+                                New
+                            </span>
+                        </li>
+                        <li>
+                            <h3>
+                                <a href="#" target="_blank">
+                                    游戏大厅
+                                </a>
+                            </h3>
+                        </li>
+                        <li>
+                            <h3>
+                                <a href="#" target="_blank">
+                                    纳米核心
+                                </a>
+                            </h3>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="friend-link size-small">
+            <div class="layout text-center">
+                <div class="friend-link-content">
+                    <span class="title">
+                        合作媒体：
+                    </span>
+                    <a href="#" target="_blank" title="腾讯网页">
+                        腾讯网页
+                    </a>
+                    <a href="#" target="_blank" title="07073">
+                        07073
+                    </a>
+                    <a href="#" target="_blank" title="一游网">
+                        一游网
+                    </a>
+                    <a href="#" target="_blank" title="Cwan">
+                        Cwan
+                    </a>
+                    <a href="#" target="_blank" title="手游网">
+                        手游网
+                    </a>
+                    <a href="#" target="_blank" title="52pk页游">
+                        52pk页游
+                    </a>
+                    <a href="#" target="_blank" title="游侠页游">
+                        游侠页游
+                    </a>
+                    <a href="#" target="_blank" title="PPS游戏">
+                        PPS游戏
+                    </a>
+                    <a href="#" target="_blank" title="E蜗卡">
+                        E蜗卡
+                    </a>
+                    <a href="#" target="_blank" title="40407开服表">
+                        40407开服表
+                    </a>
+                    <a href="#" target="_blank" title="沙发网">
+                        沙发网
+                    </a>
+                    <a href="#" target="_blank" title="智能电视软件">
+                        智能电视软件
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-info size-small">
+            <div class="clearfix layout">
+                <p class="float-left">
+                    <a target="_blank" href="#">
+                        网络文化经营许可证：沪网文[2011]0705-082号
+                    </a>
+                    <span class="pipe">
+                        |
+                    </span>
+                    <a target="_blank" href="#">
+                        沪ICP备11033765号
+                    </a>
+                    <span class="pipe">
+                        |
+                    </span>
+                    <a href="#" target="_blank">
+                        增值电信业务经营许可证：沪B2-20120024
+                    </a>
+                </p>
+                <span class="float-right">
+                    上海心动企业发展有限公司
+                </span>
+            </div>
+            <p class="layout text-center xdcooperaption">
+                商务合作 Business Contact：cooperation@xindong.com
+            </p>
+        </div>
+    </div>
+    <a id="goTop" href="#" style="display: inline;">
+    </a>
+    <div class="modal login-dialog size-small" id="popupLoginWindow" style="display: none;">
+        <div class="modal-header clearfix">
+            <a href="#" class="close">
+                关闭
+            </a>
+        </div>
+        <div class="modal-body clearfix">
+            <div class="float-left panel-left">
+                <p class="panel-left-title">
+                    登录
+                </p>
+                <form class="panel-left-content login-form" name="loginForm" method="post">
+                    <div class="submitInfo submit-error text-danger text-center" style="display: none;">
+                    </div>
+                    <ul class="formlist">
+                        <li class="usernameField">
+                            <label class="label">
+                                用户名:
+                            </label>
+                            <input name="username" type="text" class="input-text usernameInput" placeholder="请输入心动账号或昵称"
+                            tabindex="1">
+                        </li>
+                        <li class="passwordField">
+                            <label class="label">
+                                密码:
+                            </label>
+                            <input name="password" type="password" class="input-text passwordInput"
+                            tabindex="2">
+                        </li>
+                        <li class="captchaField hide" style="display: none;">
+                            <label class="label">
+                                验证码:
+                            </label>
+                            <input class="captchaInput input-text input-text-short" name="auth_key"
+                            type="text" tabindex="3">
+                            <img alt="验证码" title="点击刷新" class="captchaImg valign-top" src="http://web.xdcdn.net/xd/imgs/0.gif">
+                        </li>
+                        <li class="clearfix special">
+                            <label class="float-left">
+                                <input name="save_cookie" type="checkbox" checked="checked" class="rememberInput"
+                                tabindex="4">
+                                自动登录
+                            </label>
+                            <a href="#" target="_blank" class="float-right" tabindex="5">
+                                忘记密码？
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="#" class="submitInput btn btn-primary btn-block size-base" tabindex="6"
+                    data-loading-text="正在登录...">
+                        登　录
+                    </a>
+                    <input class="submit_button hide" type="submit" value="登录">
+                </form>
+            </div>
+            <div class="float-left panel-right">
+                <p>
+                    用其它账号登录
+                </p>
+                <a tabindex="7" class="qq-field" href="#" title="用QQ账号登录">
+                    QQ登录
+                </a>
+                <a tabindex="8" class="verycd-field" href="#" title="用VeryCD账号登录">
+                    VC登录
+                </a>
+                <div class="panel-right-bottom text-center">
+                    <a href="#" target="_blank" data-toggle="modal" tabindex="9">
+                        注册账号
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal login-dialog size-small" id="popupRegisterWindow">
+        <div class="modal-header clearfix">
+            <a href="#" class="close">
+                关闭
+            </a>
+        </div>
+        <div class="modal-body clearfix">
+            <div class="float-left panel-left">
+                <p class="panel-left-title">
+                    注册账号
+                </p>
+                <form class="panel-left-content register-form form" name="registerForm"
+                method="post">
+                    <div class="submit-error text-danger text-center" style="display: none;">
+                    </div>
+                    <ul class="formlist">
+                        <li class="form-group">
+                            <label class="label">
+                                用户名:
+                            </label>
+                            <input name="username" type="text" class="input-text input-check input-username"
+                            placeholder="中英文、数字、下划线组成" tabindex="1">
+                        </li>
+                        <li class="form-group">
+                            <label class="label">
+                                密码:
+                            </label>
+                            <input name="password" type="password" class="input-text input-check input-password input-password-new password-strangth"
+                            tabindex="1">
+                            <div class="password-strangth-level">
+                                <span style="background-color: rgb(218, 218, 218);">
+                                </span>
+                                <span style="background-color: rgb(218, 218, 218);">
+                                </span>
+                                <span style="background-color: rgb(218, 218, 218);">
+                                </span>
+                                <span style="background-color: rgb(218, 218, 218);">
+                                </span>
+                            </div>
+                        </li>
+                        <li class="form-group">
+                            <label class="label">
+                                确认密码:
+                            </label>
+                            <input type="password" name="confirm" class="input-text input-check input-password-confirm"
+                            tabindex="3">
+                        </li>
+                        <li class="form-group hide captcha-container">
+                            <label class="label">
+                                验证码:
+                            </label>
+                            <input class="input-text input-text-short input-check input-captcha form-control"
+                            name="auth_key" type="text">
+                            <img alt="验证码" title="点击刷新" class="captcha-img" src="http://web.xdcdn.net/xd/imgs/0.gif?1334825694">
+                        </li>
+                        <li class="form-group">
+                            <label class="label">
+                                真实姓名:
+                            </label>
+                            <input type="text" class="input-text input-check input-realname" tabindex="4">
+                        </li>
+                        <li class="form-group">
+                            <label class="label">
+                                身份证:
+                            </label>
+                            <input type="text" autocomplete="off" class="input-text input-check input-realid"
+                            placeholder="有效身份证号，注册后无法更改" tabindex="5">
+                        </li>
+                        <li class="form-group">
+                            <label class="label">
+                                邮箱:
+                            </label>
+                            <input type="text" autocomplete="off" class="input-text input-check input-email"
+                            tabindex="6">
+                        </li>
+                        <li class="form-group special">
+                            <label>
+                                <input class="input-agreement input-check" type="checkbox" checked="checked"
+                                name="data[User][agreement]" tabindex="7">
+                                我已经看过并同意
+                                <a href="#" target="_blank" class="text-strong">
+                                    《心动用户注册协议》
+                                </a>
+                            </label>
+                            <div class="hide">
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="#" class="form-submit btn btn-primary btn-block size-base" data-loading-text="正在注册..."
+                    tabindex="8">
+                        注　册
+                    </a>
+                    <input class="submit_button hide" type="submit" value="注册">
+                </form>
+            </div>
+            <div class="float-left panel-right">
+                <p>
+                    用其它账号登录
+                </p>
+                <a tabindex="9" class="qq-field" href="#" title="用QQ账号登录">
+                    QQ登录
+                </a>
+                <a tabindex="10" class="verycd-field" href="#" title="用VeryCD账号登录">
+                    VC登录
+                </a>
+                <div class="panel-right-bottom text-center">
+                    <a href="#" data-toggle="modal" tabindex="11">
+                        登录
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

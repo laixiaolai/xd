@@ -1,0 +1,154 @@
+.border-error{border:1px solid #e74c3c!important}
+.main-content .main-content-body .block{*width: 720px;overflow: hidden; background: #FFF;border-radius: 5px;}
+.main-content .main-content-body .block h4{}
+.order-app{margin-right: -20px;*width: 736px;}
+.order-app li{width: 168px;margin-left: 20px;margin-bottom: 50px;}
+.order-app a.btn-block{width: 164px;border: 2px solid #e6e6e6;height: 104px;border-radius: 4px;background: url(../img/logo.jpg) no-repeat;}
+.order-app .btn-block span{visibility: hidden;display: block;height: 25px;margin-top: 79px;background: #ff6600;color: #ffffff;border-radius: 0 0 2px 2px;text-align: center;}
+.order-app .btn-block:hover{border-color: #ff6600;}
+.order-app .btn-block:hover span{visibility: visible;}
+#sssgOrder{background-position: -1px -1px;}
+#sxdOrder{background-position: -166px -1px;}
+#tdyxOrder{background-position: -331px -1px;}
+#ktpdOrder{background-position: -1px -106px;}
+#jsOrder{background-position: -1px -211px;}
+#jsandroidOrder{background-position: -1px -421px;}
+#sxdandroidOrder{background-position: -331px -211px;}
+#syOrder{background-position: -166px -106px;}
+#xxdOrder{background-position: -331px -106px;}
+#sxdiosOrder{background-position: -166px -211px;}
+#sg2Order{background-position: -1px -316px;}
+/*网银充值*/
+.caret{position:absolute;top:50%;right:12px;margin-top:-4px;vertical-align:middle;transition:.25s;-webkit-backface-visibility:hidden;display:inline-block;width:0;height:0;vertical-align:top;content:"";border-left:6px solid transparent;border-right:6px solid transparent;border-top:6px solid #808b96;border-bottom:0;_color:#fff;_font-size:0;background:transparent}
+.btn-group{position:relative;width:216px;border:2px solid #e0e0e0;border-radius:4px;line-height:25px}
+.btn-group .dropdown-toggle{width:100%;padding:0;line-height:25px;background-color:#fff}
+.btn-group .dropdown-toggle:hover{background:#fff}
+.btn-group .dropdown-toggle .filter-option{text-align:left;left:11px;position:absolute;top:0;height:25px;display:block;color:#999;overflow:hidden;right:34px}
+.btn-group .dropdown-menu{display:none}
+.open{z-index:9}
+.open .dropdown-menu{display:block}
+.open .open{position:absolute;top:100%;left:0;z-index:1000;margin:8px 0 0 -2px;border-radius:6px;float:left;background-clip:padding-box;transition:.25s;background:#fff;border:2px solid #e0e0e0;width:100%;overflow:hidden;z-index:5}
+.btn-group .dropdown-menu li a{padding:5px 11px 7px;display:block;transition:none;white-space:nowrap}
+.btn-group .dropdown-menu li a:hover{background-color:#f60;color:#fff;transition:none}
+.checkbox{cursor:pointer;position:relative;padding-left:18px;_zoom:1}
+.checkbox input{display:none}
+.checkbox .icon{display:block;position:absolute;left:0;top:0;font-size:14px;font-family:"Flat-UI-Icons";color:#d7dcde}
+.checkbox-checked .icon{color:#f60}
+.icon-logo{width:20px;height:100%;background-position:4px center;background-repeat:no-repeat}
+.icon-xd{background-image:url(imgs/siteicon/v4/xd.png?v=1388196634)}
+.icon-qq{background-image:url(imgs/siteicon/v4/qq.png?v=1388196634)}
+.icon-vc{background-image:url(imgs/siteicon/v4/verycd.png?v=1388196634)}
+#main .main-content{margin-bottom:0;}
+#main .main-content .main-content-body{background:transparent;border:0;border-radius:0;padding:0;box-shadow:none;padding-bottom:80px}
+.main-content-body .payment-list .title{border-bottom:0;margin-bottom:0}
+.main-content-body .payment-list li{line-height:1}
+.main-content-body .payment-list li .payment{position:relative;background-image:url(../img/pay_btn.png);background-repeat:no-repeat;padding:0 0 0 42px;height:40px}
+.main-content-body .payment-list li .chosen{background-color:#f60;border-color:#f60;color:#fff;transition:none;z-index:3;position:relative}
+.main-content-body .payment-list li .arrow{height:40px;width:32px;background:url(../img/pay_btn.png) no-repeat 13px -69px;position:absolute;right:-32px;top:0;display:none}
+.main-content-body .payment-list li .arrow .inside{width:13px;height:100%;background-color:#f60}
+.main-content-body .payment-list li .chosen .arrow{display:block}
+#alibank{background-position:16px -109px}
+#alipay{background-position:16px -149px}
+#alicode{background-position:16px -429px}
+#aliinte{background-position:16px -389px}
+#szx{background-position:16px -189px}
+#dianxin{background-position:16px -229px}
+#liantong{background-position:16px -269px}
+#yikatong{background-position:16px -309px}
+#liquan{background-position:16px -349px}
+.amount-type .app-amount, .amount-type .unit{font-size:16px}
+#createForm{width:566px;padding-bottom:100px;background:#fff;margin-left:20px;border:1px solid #e6e6e6;border-radius:5px;box-shadow:0 2px 0 #e0e0e0;overflow:hidden}
+#createForm .input-text{padding:3px 5px;height:20px;line-height:20px}
+#createForm .btn-group{width:226px;_width:220px}
+#createForm .btn-group{line-height:26px}
+#createForm .btn-group .btn{line-height:26px;vertical-align:baseline;height:26px}
+#createForm .btn-group .dropdown-toggle .filter-option{height:26px;line-height:26px;overflow:hidden;_width:181px}
+#createForm .block-sub{margin-top:20px;margin-bottom:20px}
+#createForm .checkbox .icon{color:#ececec}
+#createForm .checkbox-checked .icon{color:#f60}
+#createForm.form .form-group-block{padding-top:30px}
+#createForm.form .input-container{padding:30px 20px;line-height:1}
+#createForm.form .input-container .form-group .form-label{line-height:16px;height:16px}
+#createForm.form .input-container .form-group .form-control-inline span{display:block;line-height:30px;height:30px}
+#createForm.form .input-container .form-group .help-block{height:30px;line-height:30px;padding:0}
+#createForm.form .input-container .form-group .well{padding:10px 20px}
+#createForm.form .input-container .form-group .well p{line-height:1.8}
+#createForm .radio-list{border-radius:4px;padding:9px 0;margin-right:-14px}
+#createForm .radio-list .radio{height:32px;line-height:32px;margin:1px 14px 11px 1px;padding:0 15px;border-radius:4px;border:1px solid #e0e0e0;cursor:pointer;white-space:nowrap;_display:inline;color:#828080}
+#createForm .radio-list .radio-checked{border-width:2px;border-color:#f60;margin:0 13px 0 0;color:#000}
+#createForm .radio-list .radio input{display:none}
+#createForm #usernameArea{position:relative;overflow:visible}
+#usernameArea{_z-index:1}
+#usernameArea .help-block, #server .help-block, #characterArea .help-block{margin-left:0}
+#usernameArea .faq{line-height:30px}
+#usernameArea .username-display{border-radius:2px;margin:5px;text-indent:8px;position:absolute;left:0;top:21px;height:20px;line-height:20px;width:220px;_width:214px;background:#f2faf8;z-index:3;color:#999}
+#usernameArea .username-display .close{padding-right:10px}
+#usernameArea .username-display .icon-xd{background-image:url(imgs/siteicon/v4/xd_chosen.png?v=1388196634)}
+#usernameArea .username-display .icon-qq{background-image:url(imgs/siteicon/v4/qq_chosen.png?v=1388196634)}
+#usernameArea .username-display .icon-vc{background-image:url(imgs/siteicon/v4/verycd_chosen.png?v=1388196634)}
+#userList{border:2px solid #f60;border-radius:6px;position:absolute;background:#fff;z-index:1;left:0;top:60px;padding:5px 0;z-index:9}
+#userList li{width:226px;transition:none;height:30px;line-height:30px;cursor:pointer;_width:220px}
+#userList li .name{padding-left:10px}
+#userList li.hover{background:#f60;color:#fff;transition:none}
+#userList li.hover .icon-xd{background-image:url(imgs/siteicon/v4/xd_inverse.png?v=1388196634)}
+#userList li.hover .icon-qq{background-image:url(imgs/siteicon/v4/qq_inverse.png?v=1388196634)}
+#userList li.hover .icon-vc{background-image:url(imgs/siteicon/v4/verycd_inverse.png?v=1388196634)}
+#contactsAdmin.modal-dialog{width:260px;color:#a6a6a6}
+#contactsAdmin.modal-dialog .modal-body{padding:10px 0 30px}
+#contactsAdmin.modal-dialog .user-select li{line-height:30px;border-bottom:1px solid #ecf0f1;padding:0 24px}
+#contactsAdmin.modal-dialog .user-select li label{height:30px;line-height:30px;cursor:pointer}
+#contactsAdmin.modal-dialog .user-select li input{height:30px;margin-right:6px}
+#contacts{width:20px;height:20px;display:block;background:url(imgs/v4/orders/btn.png) no-repeat -93px 0;position:absolute;left:205px;top:26px;_left:199px}
+#amountText{width:105px;color:#dbd9d9;margin-bottom:10px}
+#amountText.checked{color:#34495e}
+#chooseBank .radio-list .radio{margin:0 18px 6px 0;width:86px;height:32px;line-height:32px;padding:0;text-indent:32px;margin:1px 14px 11px 1px;border-radius:4px;border:1px solid #e0e0e0;background:url(../img/pay_btn.png) no-repeat}
+#chooseBank .radio-list .radio-checked{border-width:2px;border-color:#f60;margin:0 13px 10px 0}
+#chooseBank .radio-list #icbc{background-position:-200px 0}
+#chooseBank .radio-list #cmbchina{background-position:-200px -32px}
+#chooseBank .radio-list #ccb{background-position:-200px -64px}
+#chooseBank .radio-list #boco{background-position:-200px -96px}
+#chooseBank .radio-list #zgb{background-position:-200px -128px}
+#chooseBank .radio-list #bccb{background-position:-200px -160px}
+#chooseBank .radio-list #abc{background-position:-200px -192px}
+#chooseBank .radio-list #cmbc{background-position:-200px -224px}
+#chooseBank .radio-list #pab{background-position:-200px -256px}
+#chooseBank .radio-list #ecitic{background-position:-200px -288px}
+#chooseBank .radio-list #sdb{background-position:-200px -320px}
+#chooseBank .radio-list #spdb{background-position:-200px -352px}
+#chooseBank .radio-list #cib{background-position:-200px -384px}
+#chooseBank .radio-list #gfb{background-position:-200px -416px}
+#chooseBank .radio-list #ceb{background-position:-200px -448px}
+#chooseBoc .radio-list .radio{text-indent:-9999px;width:110px;padding:0;background:url(imgs/v4/orders/btn.png) no-repeat}
+#chooseBoc .radio-list #visa{background-position:0 -489px}
+#chooseBoc .radio-list #master{background-position:-120px -489px}
+#agreement.form-group{display:inline-block;*display:block}
+#agreement .checkbox{display:inline-block;*display:inline;*line-height:25px;*zoom:1}
+#payConfirm.modal-dialog{width:450px;color:#a6a6a6}
+#payConfirm.modal-dialog .modal-footer{text-align:center}
+#payConfirm.modal-dialog .well{margin-top:30px}
+.main-content, .main-sidebar{border:0;box-shadow:none;background:transparent;padding-bottom:0}
+.main-content{width:774px}
+.main-content .main-content-header{margin-bottom:20px;padding:0}
+.main-content-header .order-step{overflow:hidden;position:relative;border-radius:3px}
+.main-content-header .order-step li{line-height:1;text-align:center}
+.main-content-header .order-step li a, .main-content-header .order-step li span{height:45px;line-height:45px;width:256px;background-color:#fff;transition:none;border-width:0 2px;border-style:solid;border-color:#e0e0e0;margin-right:-2px;position:relative;display:block}
+.main-content-header .order-step li .chosen{background:#84cbca;color:#3a3030;transition:none;border-color:#84cbca;z-index:3}
+.main-content-header .order-step li .first{border-left-width:0}
+.main-content .main-content-header, .main-content .main-content-body, .main-sidebar-menu{background-color:#fff;border:1px solid #e6e6e6;box-shadow:0 2px 0 #e0e0e0;border-radius:5px}
+.main-content .main-content-body{padding-top:0}
+.main-content-body .text-center .btn-block{margin-left:auto;margin-right:auto}
+.main-sidebar{width:186px}
+.main-sidebar .view-history{line-height:40px;margin-bottom:20px}
+.main-sidebar-menu{width:184px;padding-bottom:10px;margin-bottom:20px}
+.main-sidebar-menu li{_height:40px;vertical-align:middle}
+.main-sidebar-menu li .title{line-height:25px;padding:15px 14px;border-bottom:1px solid #e6e6e6;margin-bottom:10px;_height:25px}
+.main-sidebar-menu li a{line-height:40px;padding:0 14px;width:auto;_zoom:1}
+.main-sidebar-menu li a.chosen{background-color:#f60;color:#fefefe}
+.main-sidebar-menu li .title a{line-height:25px}
+.main-sidebar-menu li.service-contact{padding:0 14px}
+.main-sidebar-menu li .service-email a{padding:0;line-height:1}
+.main-sidebar-menu li .service-phone{color:#84cbca;font-size:24px}
+.main-sidebar-menu li .service-appeal{width:92px;height:22px;line-height:22px;color:#fff;background:url(../img/pay_btn.png) no-repeat 0 0;display:block;margin:12px 0;padding:0}
+.main-sidebar-menu li .service-appeal:hover{background-position:0 -23px}
+.main-sidebar-menu li .service-appeal:active{background-position:0 -46px}
+.main-sidebar-menu li .kefu-qq-link{padding:0;width:92px}

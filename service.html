@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>客服中心-首页</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="css/main.css" rel="stylesheet">
+<link href="css/service.css" rel="stylesheet">
+</head>
+<body>
+	<noscript>
+        &lt;div id="noscript"&gt;
+            您的浏览器禁用了JavaScript，为了正常使用本网站的功能请开启JavaScript或者更换浏览器重试。
+        &lt;/div&gt;
+    </noscript>
+    <div id="header" class="relative">
+        <div class="header-login">
+            <div class="layout text-right size-small clearfix">
+                <div class="float-right no-login ">
+                    您好，欢迎来到心动游戏：
+                    <a id="btnLogin" href="#" data-toggle="modal">
+                        马上登录
+                    </a>
+                    或
+                    <a id="btnRegister" data-toggle="modal" href="#">
+                        注册
+                    </a>
+                </div>
+                <div class="float-right yes-login hide">
+                    <a href="#" class="hide admin-link">
+                        后台
+                    </a>
+                    <div class="xdmini-dropdown my-profile relative hide">
+                        <a href="#" class="xdmini-dropdown-header my-profile-header" data-toggle="dropdown">
+                            <span class="nickname">
+                            </span>
+                            <span class="arrow">
+                            </span>
+                        </a>
+                        <div class="xdmini-dropdown-body my-profile-body text-left">
+                            <a href="#">
+                                个人中心
+                            </a>
+                            <a href="#">
+                                我的礼券
+                            </a>
+                            <a href="#">
+                                充值历史
+                            </a>
+                            <a href="#">
+                                账号安全
+                            </a>
+                            <a href="#" class="logout">
+                                退出
+                            </a>
+                            <div class="arrow" style="left: auto; right: 18px;">
+                                <div class="inside">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="xdmini-dropdown my-games float-left relative hide">
+                    <a href="#" class="xdmini-dropdown-header my-games-header" data-toggle="dropdown">
+                        我的游戏
+                        <span class="arrow">
+                        </span>
+                    </a>
+                    <div class="xdmini-dropdown-body my-games-body text-left">
+                        <div class="arrow">
+                            <div class="inside">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-nav ">
+            <div class="layout clearfix">
+                <a href="#" class="float-left header-logo-xd">
+                </a>
+                <div class="nav-list float-left">
+                    <a href="index.html" class="size-big btn btn-link hover ">
+                        首页
+                    </a>
+                    <a href="paygame.html" class="size-big btn btn-link  ">
+                        充值
+                    </a>
+                    <a href="service.html" class="size-big btn btn-link  ">
+                        客服
+                    </a>
+                    <a href="pay_.html" class="size-big btn btn-link  ">
+                        活动
+                    </a>
+                    <a href="ucenter.html" class="size-big btn btn-link  ">
+                        用户中心
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="main" class="">
+        <div class="layout clearfix">
+            <div class="main-sidebar float-left">
+                <ul class="main-sidebar-menu">
+                    <li class="text-center">
+                        <div class="title text-left">客服</div>
+                    </li>
+                    <li><a href="service.html" class="btn-block  chosen">首页</a>
+                    </li>
+                    <li><a href="service_.html" class="btn-block ">自助服务</a>
+                    </li>
+                    <li><a href="service_help.html" class="btn-block ">帮助中心</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="main-content main-content-center float-left need-login">
+                <div class="main-content-body clearfix">
+                     <h3 class="main-content-header">服务指南</h3>
+     
+                    <div class="service-guide block-sub clearfix">
+                        <a class="item  " href="#" target="_blank" data-key="hot_line" data-popup="true" data-title="客服热线" data-content="我们提供7*24的服务热线，如您有任何游戏方面问题或建议都可致电4001526526。">
+                            <div class="icon hot_line"></div>
+                            <div class="foot">客服热线</div>
+                        </a>
+                        <a class="item kefu-qq-link " href="#" target="_blank">
+                            <div class="icon qq_online"></div>
+                            <div class="foot">在线QQ</div>
+                        </a>
+                        <a class="item  " href="#" target="_blank" data-key="wechat" data-popup="true" data-title="微信" data-content="欢迎关注心动客服微信账号，扫一扫下方二维码即可关注。">
+                            <div class="icon wechat"></div>
+                            <div class="foot">微信</div>
+                        </a>
+                        <a class="item  marginRight0" href="#" target="_blank" data-toggle="modal">
+                            <div class="icon petition"></div>
+                            <div class="foot">预约来访</div>
+                        </a>
+                    </div>
+                    <div style="display: none;">
+                        <div id="QRCode"></div>
+                    </div>
+                     <h3 class="main-content-header relative" style="margin-top: 20px;">
+                自助服务
+                <a class="more" href="#" target="_blank">更多&gt;</a>
+            </h3>
+     
+                    <div class="self-help block-sub clearfix">
+                        <ul class="well clearfix float-left">
+                            <li class="float-left clearfix ">
+                                <a href="#" target="_blank"> <span class="font-icon float-left"></span>
+     <span class="float-left">账号申诉</span>
+     
+                                </a>
+                            </li>
+                            <li class="float-left clearfix ">
+                                <a href="#" target="_blank"> <span class="font-icon float-left"></span>
+     <span class="float-left">装备找回</span>
+     
+                                </a>
+                            </li>
+                            <li class="float-left clearfix marginRight0">
+                                <a href="#" target="_blank"> <span class="font-icon float-left"></span>
+     <span class="float-left">防沉迷认证</span>
+     
+                                </a>
+                            </li>
+                            <li class="float-left clearfix ">
+                                <a href="#" target="_blank"> <span class="font-icon float-left"></span>
+     <span class="float-left">手机认证</span>
+     
+                                </a>
+                            </li>
+                            <li class="float-left clearfix ">
+                                <a href="#" target="_blank"> <span class="font-icon float-left"></span>
+     <span class="float-left">邮箱认证</span>
+     
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="main-sidebar-right float-right">
+                <div class="main-sidebar">
+                    <ul class="main-sidebar-menu">
+                        <li class="text-center">
+                            <div class="title text-left relative">客服公告 <a class="more" href="#" target="_blank">更多&gt;</a>
+     
+                            </div>
+                        </li>
+                        <li class="line"><a href="#" target="_blank">《仙侠道》魔画大师活动</a>
+                        </li>
+                        <li class="line"><a href="#" target="_blank">《深渊》7月14日版本更新公告</a>
+                        </li>
+                        <li class="line"><a href="#" target="_blank">《仙侠道》限时团购活动</a>
+                        </li>
+                        <li class="line"><a href="#" target="_blank">【公告】《仙侠道》R44版本更新预告</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main-sidebar">
+                    <ul class="main-sidebar-menu">
+                        <li class="text-center">
+                            <div class="title text-left relative">常见问题 <a class="more" href="#" target="_blank">更多&gt;</a>
+     
+                            </div>
+                        </li>
+                        <li class="line"><a href="#" target="_blank">充值遇到问题？</a>
+                        </li>
+                        <li class="line"><a href="#" target="_blank">QQ登陆异常？</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal modal-dialog" id="popupPetition">
+                <div class="modal-header clearfix">
+                    <div class="title">预约来访</div> <a href="#" class="close">×</a>
+     
+                </div>
+                <div class="modal-body clearfix">
+                    <div class="float-left panel-left">
+                        <p class="panel-left-title panel-title">预约来访流程:</p>
+                        <div class="panel-left-content text-center panel-content">
+                            <div class="petition-step">1.填写来访需求单</div>
+                            <div class="arrow"></div>
+                            <div class="petition-step">2.心动专员与您联系</div>
+                            <div class="arrow"></div>
+                            <div class="petition-step">3.预约来访时间</div>
+                        </div>
+                    </div>
+                    <div class="float-left panel-right">
+                        <p class="panel-right-title panel-title">预约来访需求单:</p>
+                        <ul class="panel-right-content form panel-content">
+                            <li>
+                                <label>姓名：</label>
+                                <input type="text" name="realname" class="realname input-text" data-validate="value"><span class="info"></span>
+     
+                            </li>
+                            <li>
+                                <label>联系电话：</label>
+                                <input type="text" name="telephone" class="telephone input-text" data-validate="value"><span class="info"></span>
+     
+                            </li>
+                            <li>
+                                <label>详细描述：</label>
+                                <textarea name="abnormalinfo" class="abnormalinfo input-textarea" data-validate="value" placeholder="您提供的资料越详细，将有助于问题得到更快的查核" rows="12"></textarea>
+                            </li>
+                             
+                            <li class="form-submit-area text-center">
+                                <div class="submit-info text-danger hide text-left"></div>
+                                <div class="btn btn-primary btn-confirm" data-loading-text="正在提交...">提　交</div>
+                                <div class="btn btn-default btn-cancel">取消</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+    </div>
+    <div id="footer" class="full">
+        <div class="footer-links">
+            <div class="layout clearfix">
+                <div class="float-left footer-logo-xd">
+                    <a href="#" class="hide-text">
+                        心动游戏
+                    </a>
+                </div>
+                <div class="float-left footer-list footer-game-list">
+                    <div class="title">
+                        游戏
+                    </div>
+                    <ul class="clearfix content">
+                        <li>
+                            <a href="#" target="_blank">
+                                神仙道
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                盛世三国
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                将神
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                深渊
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                仙侠道
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                盛世三国2
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                开天辟地2
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                天地英雄
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                忍者无双
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="float-left footer-list footer-about-list">
+                    <div class="title">
+                        关于
+                    </div>
+                    <ul class="content">
+                        <li>
+                            <a href="#" target="_blank">
+                                公司介绍
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                商务合作
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                加入心动
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                心动公益
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="float-left footer-list footer-service-list">
+                    <div class="title">
+                        服务
+                    </div>
+                    <ul class="content">
+                        <li>
+                            <a href="#" target="_blank">
+                                充值
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                客服
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                免责声明
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                未成年人家长监护
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="float-left footer-list footer-other-list">
+                    <div class="title">
+                        其它
+                    </div>
+                    <ul class="content">
+                        <li>
+                            <a href="#" target="_blank">
+                                官方微博
+                            </a>
+                            <span class="new size-small">
+                                New
+                            </span>
+                        </li>
+                        <li>
+                            <h3>
+                                <a href="#" target="_blank">
+                                    游戏大厅
+                                </a>
+                            </h3>
+                        </li>
+                        <li>
+                            <h3>
+                                <a href="#" target="_blank">
+                                    纳米核心
+                                </a>
+                            </h3>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="friend-link size-small">
+            <div class="layout text-center">
+                <div class="friend-link-content">
+                    <span class="title">
+                        合作媒体：
+                    </span>
+                    <a href="#" target="_blank" title="腾讯网页">
+                        腾讯网页
+                    </a>
+                    <a href="#" target="_blank" title="07073">
+                        07073
+                    </a>
+                    <a href="#" target="_blank" title="一游网">
+                        一游网
+                    </a>
+                    <a href="#" target="_blank" title="Cwan">
+                        Cwan
+                    </a>
+                    <a href="#" target="_blank" title="手游网">
+                        手游网
+                    </a>
+                    <a href="#" target="_blank" title="52pk页游">
+                        52pk页游
+                    </a>
+                    <a href="#" target="_blank" title="游侠页游">
+                        游侠页游
+                    </a>
+                    <a href="#" target="_blank" title="PPS游戏">
+                        PPS游戏
+                    </a>
+                    <a href="#" target="_blank" title="E蜗卡">
+                        E蜗卡
+                    </a>
+                    <a href="#" target="_blank" title="40407开服表">
+                        40407开服表
+                    </a>
+                    <a href="#" target="_blank" title="沙发网">
+                        沙发网
+                    </a>
+                    <a href="#" target="_blank" title="智能电视软件">
+                        智能电视软件
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-info size-small">
+            <div class="clearfix layout">
+                <p class="float-left">
+                    <a target="_blank" href="#">
+                        网络文化经营许可证：沪网文[2011]0705-082号
+                    </a>
+                    <span class="pipe">
+                        |
+                    </span>
+                    <a target="_blank" href="#">
+                        沪ICP备11033765号
+                    </a>
+                    <span class="pipe">
+                        |
+                    </span>
+                    <a href="#" target="_blank">
+                        增值电信业务经营许可证：沪B2-20120024
+                    </a>
+                </p>
+                <span class="float-right">
+                    上海心动企业发展有限公司
+                </span>
+            </div>
+            <p class="layout text-center xdcooperaption">
+                商务合作 Business Contact：cooperation@xindong.com
+            </p>
+        </div>
+    </div>
+    <a id="goTop" href="#" style="display: inline;">
+    </a>
+    <div class="modal login-dialog size-small" id="popupLoginWindow" style="display: none;">
+        <div class="modal-header clearfix">
+            <a href="#" class="close">
+                关闭
+            </a>
+        </div>
+        <div class="modal-body clearfix">
+            <div class="float-left panel-left">
+                <p class="panel-left-title">
+                    登录
+                </p>
+                <form class="panel-left-content login-form" name="loginForm" method="post">
+                    <div class="submitInfo submit-error text-danger text-center" style="display: none;">
+                    </div>
+                    <ul class="formlist">
+                        <li class="usernameField">
+                            <label class="label">
+                                用户名:
+                            </label>
+                            <input name="username" type="text" class="input-text usernameInput" placeholder="请输入心动账号或昵称"
+                            tabindex="1">
+                        </li>
+                        <li class="passwordField">
+                            <label class="label">
+                                密码:
+                            </label>
+                            <input name="password" type="password" class="input-text passwordInput"
+                            tabindex="2">
+                        </li>
+                        <li class="captchaField hide" style="display: none;">
+                            <label class="label">
+                                验证码:
+                            </label>
+                            <input class="captchaInput input-text input-text-short" name="auth_key"
+                            type="text" tabindex="3">
+                            <img alt="验证码" title="点击刷新" class="captchaImg valign-top" src="http://web.xdcdn.net/xd/imgs/0.gif">
+                        </li>
+                        <li class="clearfix special">
+                            <label class="float-left">
+                                <input name="save_cookie" type="checkbox" checked="checked" class="rememberInput"
+                                tabindex="4">
+                                自动登录
+                            </label>
+                            <a href="#" target="_blank" class="float-right" tabindex="5">
+                                忘记密码？
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="#" class="submitInput btn btn-primary btn-block size-base" tabindex="6"
+                    data-loading-text="正在登录...">
+                        登　录
+                    </a>
+                    <input class="submit_button hide" type="submit" value="登录">
+                </form>
+            </div>
+            <div class="float-left panel-right">
+                <p>
+                    用其它账号登录
+                </p>
+                <a tabindex="7" class="qq-field" href="#" title="用QQ账号登录">
+                    QQ登录
+                </a>
+                <a tabindex="8" class="verycd-field" href="#" title="用VeryCD账号登录">
+                    VC登录
+                </a>
+                <div class="panel-right-bottom text-center">
+                    <a href="#" target="_blank" data-toggle="modal" tabindex="9">
+                        注册账号
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal login-dialog size-small" id="popupRegisterWindow">
+        <div class="modal-header clearfix">
+            <a href="#" class="close">
+                关闭
+            </a>
+        </div>
+        <div class="modal-body clearfix">
+            <div class="float-left panel-left">
+                <p class="panel-left-title">
+                    注册账号
+                </p>
+                <form class="panel-left-content register-form form" name="registerForm"
+                method="post">
+                    <div class="submit-error text-danger text-center" style="display: none;">
+                    </div>
+                    <ul class="formlist">
+                        <li class="form-group">
+                            <label class="label">
+                                用户名:
+                            </label>
+                            <input name="username" type="text" class="input-text input-check input-username"
+                            placeholder="中英文、数字、下划线组成" tabindex="1">
+                        </li>
+                        <li class="form-group">
+                            <label class="label">
+                                密码:
+                            </label>
+                            <input name="password" type="password" class="input-text input-check input-password input-password-new password-strangth"
+                            tabindex="1">
+                            <div class="password-strangth-level">
+                                <span style="background-color: rgb(218, 218, 218);">
+                                </span>
+                                <span style="background-color: rgb(218, 218, 218);">
+                                </span>
+                                <span style="background-color: rgb(218, 218, 218);">
+                                </span>
+                                <span style="background-color: rgb(218, 218, 218);">
+                                </span>
+                            </div>
+                        </li>
+                        <li class="form-group">
+                            <label class="label">
+                                确认密码:
+                            </label>
+                            <input type="password" name="confirm" class="input-text input-check input-password-confirm"
+                            tabindex="3">
+                        </li>
+                        <li class="form-group hide captcha-container">
+                            <label class="label">
+                                验证码:
+                            </label>
+                            <input class="input-text input-text-short input-check input-captcha form-control"
+                            name="auth_key" type="text">
+                            <img alt="验证码" title="点击刷新" class="captcha-img" src="http://web.xdcdn.net/xd/imgs/0.gif?1334825694">
+                        </li>
+                        <li class="form-group">
+                            <label class="label">
+                                真实姓名:
+                            </label>
+                            <input type="text" class="input-text input-check input-realname" tabindex="4">
+                        </li>
+                        <li class="form-group">
+                            <label class="label">
+                                身份证:
+                            </label>
+                            <input type="text" autocomplete="off" class="input-text input-check input-realid"
+                            placeholder="有效身份证号，注册后无法更改" tabindex="5">
+                        </li>
+                        <li class="form-group">
+                            <label class="label">
+                                邮箱:
+                            </label>
+                            <input type="text" autocomplete="off" class="input-text input-check input-email"
+                            tabindex="6">
+                        </li>
+                        <li class="form-group special">
+                            <label>
+                                <input class="input-agreement input-check" type="checkbox" checked="checked"
+                                name="data[User][agreement]" tabindex="7">
+                                我已经看过并同意
+                                <a href="#" target="_blank" class="text-strong">
+                                    《心动用户注册协议》
+                                </a>
+                            </label>
+                            <div class="hide">
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="#" class="form-submit btn btn-primary btn-block size-base" data-loading-text="正在注册..."
+                    tabindex="8">
+                        注　册
+                    </a>
+                    <input class="submit_button hide" type="submit" value="注册">
+                </form>
+            </div>
+            <div class="float-left panel-right">
+                <p>
+                    用其它账号登录
+                </p>
+                <a tabindex="9" class="qq-field" href="#" title="用QQ账号登录">
+                    QQ登录
+                </a>
+                <a tabindex="10" class="verycd-field" href="#" title="用VeryCD账号登录">
+                    VC登录
+                </a>
+                <div class="panel-right-bottom text-center">
+                    <a href="#" data-toggle="modal" tabindex="11">
+                        登录
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
