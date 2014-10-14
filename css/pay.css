@@ -61,7 +61,7 @@
 #createForm .input-text{padding:3px 5px;height:20px;line-height:20px}
 #createForm .btn-group{width:226px;_width:220px}
 #createForm .btn-group{line-height:26px}
-#createForm .btn-group .btn{line-height:26px;vertical-align:baseline;height:26px}
+#createForm .btn-group .btn{line-height:26px;*vertical-align:baseline;height:26px}
 #createForm .btn-group .dropdown-toggle .filter-option{height:26px;line-height:26px;overflow:hidden;_width:181px}
 #createForm .block-sub{margin-top:20px;margin-bottom:20px}
 #createForm .checkbox .icon{color:#ececec}
